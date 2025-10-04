@@ -1,66 +1,66 @@
 // Comprehensive pool of quiz questions - randomized selection each time!
 const questionPool = [
     {
-        question: "What's your ideal way to spend a weekend? 🌸",
+        question: "What's your ideal way to spend a dark evening? �",
         answers: [
-            { text: "Reading a book in a cozy corner with fairy lights ✨", personality: "fairy" },
-            { text: "Going on an adventure in the forest 🌲", personality: "dragon" },
-            { text: "Having a magical tea party with friends 🫖", personality: "unicorn" },
-            { text: "Splashing around in a beautiful lagoon 🌊", personality: "mermaid" }
+            { text: "Reading ancient tomes in a candlelit library 📚", personality: "vampire" },
+            { text: "Running wild through moonlit forests 🌲", personality: "werewolf" },
+            { text: "Brewing potions with mysterious herbs 🔮", personality: "witch" },
+            { text: "Floating silently through abandoned halls 👻", personality: "ghost" }
         ]
     },
     {
-        question: "Which magical power would you choose? 🪄",
+        question: "Which dark power would you choose? ⚡",
         answers: [
-            { text: "The ability to make flowers bloom instantly 🌺", personality: "fairy" },
-            { text: "Breathing fire and flying through clouds ☁️", personality: "dragon" },
-            { text: "Healing others with a gentle touch 💖", personality: "unicorn" },
-            { text: "Controlling the tides and talking to sea creatures 🐠", personality: "mermaid" }
+            { text: "Eternal life and hypnotic charm 🩸", personality: "vampire" },
+            { text: "Supernatural strength and pack leadership 🐺", personality: "werewolf" },
+            { text: "Ancient magic and spell-casting abilities �", personality: "witch" },
+            { text: "Invisibility and walking through walls �", personality: "ghost" }
         ]
     },
     {
         question: "What's your favorite type of music? 🎵",
         answers: [
-            { text: "Soft, whimsical melodies that make you daydream 🎶", personality: "fairy" },
-            { text: "Epic, powerful orchestral music 🎼", personality: "dragon" },
-            { text: "Gentle, uplifting songs that warm your heart 💕", personality: "unicorn" },
-            { text: "Flowing, oceanic sounds that calm your soul 🌊", personality: "mermaid" }
+            { text: "Haunting classical pieces that stir the soul �", personality: "vampire" },
+            { text: "Primal drums and wild, rhythmic beats 🥁", personality: "werewolf" },
+            { text: "Mystical chants and ancient melodies 🎶", personality: "witch" },
+            { text: "Ethereal, otherworldly harmonies that echo �️", personality: "ghost" }
         ]
     },
     {
-        question: "Which color palette speaks to you most? 🎨",
+        question: "Which dark color palette calls to you? 🎨",
         answers: [
-            { text: "Pastels - soft pinks, lavender, and mint green 💜", personality: "fairy" },
-            { text: "Bold jewel tones - deep reds, purples, and gold ❤️", personality: "dragon" },
-            { text: "Pure whites, silvers, and rainbow hues 🌈", personality: "unicorn" },
-            { text: "Ocean blues, seafoam greens, and pearl whites 🤍", personality: "mermaid" }
+            { text: "Deep crimsons, midnight blacks, and blood reds �", personality: "vampire" },
+            { text: "Earth tones, silver moonlight, and forest greens 🌲", personality: "werewolf" },
+            { text: "Midnight purples, emerald greens, and mystical golds 💜", personality: "witch" },
+            { text: "Ethereal whites, misty grays, and translucent blues 🤍", personality: "ghost" }
         ]
     },
     {
-        question: "What's your approach to helping others? 🤗",
+        question: "How do you protect those you care about? 🛡️",
         answers: [
-            { text: "Offering gentle encouragement and tiny surprises 🎁", personality: "fairy" },
-            { text: "Being fiercely protective and standing up for them 🛡️", personality: "dragon" },
-            { text: "Providing comfort and emotional healing 🫂", personality: "unicorn" },
-            { text: "Listening deeply and offering wise guidance 🧭", personality: "mermaid" }
+            { text: "With elegant manipulation and strategic planning �", personality: "vampire" },
+            { text: "With fierce loyalty and raw, protective instincts �", personality: "werewolf" },
+            { text: "With powerful spells and magical barriers 🔮", personality: "witch" },
+            { text: "By watching over them from the shadows unseen 👻", personality: "ghost" }
         ]
     },
     {
-        question: "Where would you build your dream home? 🏡",
+        question: "Where would you build your dark sanctuary? �️",
         answers: [
-            { text: "In a magical garden full of twinkling lights 🌟", personality: "fairy" },
-            { text: "On top of a mountain with an amazing view 🏔️", personality: "dragon" },
-            { text: "In a peaceful meadow surrounded by rainbows 🌈", personality: "unicorn" },
-            { text: "In an underwater palace made of coral and pearls 🐚", personality: "mermaid" }
+            { text: "An elegant gothic mansion with hidden passages �", personality: "vampire" },
+            { text: "A secluded cabin deep in the wilderness �", personality: "werewolf" },
+            { text: "A mysterious cottage filled with magical artifacts 🔮", personality: "witch" },
+            { text: "An abandoned manor where spirits can roam free �", personality: "ghost" }
         ]
     },
     {
-        question: "What's your favorite way to express creativity? 🎨",
+        question: "What's your favorite way to express darkness? 🎨",
         answers: [
-            { text: "Creating tiny, delicate crafts and decorations ✂️", personality: "fairy" },
-            { text: "Bold, dramatic art that makes a statement 🖼️", personality: "dragon" },
-            { text: "Spreading joy through acts of kindness and beauty 🌸", personality: "unicorn" },
-            { text: "Storytelling and sharing ancient wisdom 📚", personality: "mermaid" }
+            { text: "Creating eerie art with blood and shadows 🩸", personality: "vampire" },
+            { text: "Crafting dark totems and cursed objects 🪬", personality: "witch" },
+            { text: "Marking territory with primal scratches 🐾", personality: "werewolf" },
+            { text: "Leaving mysterious messages in old books �", personality: "ghost" }
         ]
     },
     {
@@ -82,57 +82,57 @@ const questionPool = [
         ]
     },
     {
-        question: "How do you handle challenges in life? 💪",
+        question: "How do you handle threatening situations? �",
         answers: [
-            { text: "Find creative, unexpected solutions with a touch of magic ✨", personality: "fairy" },
-            { text: "Face them head-on with courage and determination 🔥", personality: "dragon" },
-            { text: "Approach with patience, wisdom, and inner strength 🌟", personality: "unicorn" },
-            { text: "Go with the flow and trust your intuition 🌊", personality: "mermaid" }
+            { text: "Strike with calculated precision and cunning 🗡️", personality: "vampire" },
+            { text: "Unleash primal fury and raw power 🔥", personality: "werewolf" },
+            { text: "Cast protective spells and dark curses 🪄", personality: "witch" },
+            { text: "Vanish into the shadows and strike unseen 👤", personality: "ghost" }
         ]
     },
     {
-        question: "What's your dream magical accessory? ✨",
+        question: "What's your dream dark accessory? ✨",
         answers: [
-            { text: "A delicate wand that leaves sparkle trails 🪄", personality: "fairy" },
-            { text: "A powerful crystal that amplifies inner strength 💎", personality: "dragon" },
-            { text: "A healing amulet that spreads peace and love 🌟", personality: "unicorn" },
-            { text: "A mystical pearl that reveals hidden truths 🔮", personality: "mermaid" }
+            { text: "An ornate silver ring that controls minds 💍", personality: "vampire" },
+            { text: "A twisted staff that channels dark magic 🪄", personality: "witch" },
+            { text: "A mystical collar that enhances beast form 🔗", personality: "werewolf" },
+            { text: "An ancient locket that traps souls 🔮", personality: "ghost" }
         ]
     },
     {
-        question: "Which season calls to your soul? 🍂",
+        question: "Which season calls to your dark soul? 🍂",
         answers: [
-            { text: "Spring - when everything blooms and comes alive 🌸", personality: "fairy" },
-            { text: "Summer - bold, bright, and full of energy ☀️", personality: "dragon" },
-            { text: "Autumn - peaceful, reflective, and beautifully transformative 🍂", personality: "unicorn" },
-            { text: "Winter - mysterious, deep, and magically quiet ❄️", personality: "mermaid" }
+            { text: "Winter - when death blankets the world in cold ❄️", personality: "vampire" },
+            { text: "Autumn - when decay and transformation rule 🍂", personality: "witch" },
+            { text: "Full moon nights - when the beast awakens �", personality: "werewolf" },
+            { text: "All Hallows' Eve - when spirits roam free 🎃", personality: "ghost" }
         ]
     },
     {
-        question: "What's your magical sleeping style? 😴",
+        question: "What's your preferred resting style? 😴",
         answers: [
-            { text: "Curled up in a cozy nest of soft pillows and blankets 🛏️", personality: "fairy" },
-            { text: "Sprawled out confidently, taking up the whole space 🔥", personality: "dragon" },
-            { text: "Peacefully on your back, dreaming of rainbows 🌈", personality: "unicorn" },
-            { text: "Gently swaying like floating on gentle waves 🌊", personality: "mermaid" }
+            { text: "Hanging upside down in complete darkness 🦇", personality: "vampire" },
+            { text: "Curled up in a den surrounded by bones �", personality: "werewolf" },
+            { text: "Floating cross-legged in meditation 🧘‍♀️", personality: "witch" },
+            { text: "Phasing in and out of solid matter restlessly 👻", personality: "ghost" }
         ]
     },
     {
-        question: "How do you prefer to receive compliments? 💖",
+        question: "How do you prefer to receive fear? 💖",
         answers: [
-            { text: "Whispered sweetly with a little giggle ✨", personality: "fairy" },
-            { text: "Boldly declared for everyone to hear 📣", personality: "dragon" },
-            { text: "Gently spoken with genuine warmth 🤗", personality: "unicorn" },
-            { text: "Shared quietly in an intimate moment 💫", personality: "mermaid" }
+            { text: "Through trembling whispers and wide eyes 👁️", personality: "vampire" },
+            { text: "In terrified screams that echo through forests 📣", personality: "werewolf" },
+            { text: "Through hushed rumors of your dark power �", personality: "witch" },
+            { text: "In silent, haunted stares and cold chills 💫", personality: "ghost" }
         ]
     },
     {
-        question: "What's your ideal magical pet companion? 🐾",
+        question: "What's your ideal dark companion? 🐾",
         answers: [
-            { text: "A tiny glowing butterfly that sits on your shoulder 🦋", personality: "fairy" },
-            { text: "A majestic phoenix that soars beside you 🔥", personality: "dragon" },
-            { text: "A gentle deer that follows you through meadows 🦌", personality: "unicorn" },
-            { text: "A wise sea turtle that swims with you 🐢", personality: "mermaid" }
+            { text: "A loyal bat that scouts ahead in darkness �", personality: "vampire" },
+            { text: "A pack of wolves that hunt with you �", personality: "werewolf" },
+            { text: "A wise raven that carries messages 🐦‍⬛", personality: "witch" },
+            { text: "A phantom cat that phases between dimensions �‍⬛", personality: "ghost" }
         ]
     },
     {
@@ -211,38 +211,43 @@ function generateRandomQuestions() {
 
 // Enhanced Personality results with compatibility and zodiac data
 const personalities = {
-    fairy: {
-        title: "✨ Enchanted Fairy ✨",
-        emoji: "🧚‍♀️",
-        description: "You are a magical fairy with a heart full of wonder! You bring joy and sparkle wherever you go. Your gentle nature and love for beautiful, delicate things make you a beacon of light in others' lives. You find magic in the smallest moments and have a gift for making ordinary days feel extraordinary. Your creativity knows no bounds, and you're always ready to sprinkle a little fairy dust on someone's day! 🌟💖",
-        zodiacSigns: ["♊ Gemini", "♎ Libra", "♒ Aquarius"],
+    vampire: {
+        title: "🧛‍♂️ Elegant Vampire 🧛‍♂️",
+        emoji: "�‍♂️",
+        description: "You are a sophisticated and mysterious vampire! You possess an eternal elegance and magnetic charm that draws people in. Your intelligence is matched only by your refined tastes and aristocratic nature. You prefer the shadows and nighttime, finding beauty in darkness and mystery. You're selective with your relationships but fiercely loyal to those you consider worthy. Your presence commands respect and a hint of fear. 🩸✨",
+        zodiacSigns: ["♏ Scorpio", "♑ Capricorn", "♒ Aquarius"],
         compatibility: {
-            best: ["unicorn", "mermaid"],
-            good: ["fairy"],
-            challenging: ["dragon"]
+            best: ["ghost", "witch"],
+            good: ["vampire"],
+            challenging: ["werewolf"]
         },
         creativity: [
-            { icon: "🎨", title: "Miniature Art", desc: "Creating tiny, detailed masterpieces" },
-            { icon: "🌸", title: "Flower Pressing", desc: "Preserving nature's beauty forever" },
-            { icon: "✨", title: "Fairy Gardens", desc: "Designing magical miniature worlds" },
-            { icon: "🕯️", title: "Candle Making", desc: "Crafting scented magical ambiance" }
+            { icon: "�", title: "Gothic Literature", desc: "Writing dark, romantic poetry and stories" },
+            { icon: "�", title: "Wine Connoisseur", desc: "Appreciating the finest vintages" },
+            { icon: "🎼", title: "Classical Music", desc: "Playing haunting melodies on piano" },
+            { icon: "�", title: "Antique Collecting", desc: "Curating beautiful, ancient treasures" }
         ],
         funFacts: [
-            "🌟 Fairies are drawn to anything that sparkles and shimmers",
-            "🌙 They're most active during twilight hours when magic is strongest", 
-            "🍄 Fairy rings of mushrooms are their favorite gathering spots",
-            "💫 They can sense emotions and always know when someone needs cheering up"
-        ]
+            "🩸 Vampires have an impeccable sense of style that never goes out of fashion",
+            "🌙 They can see perfectly in complete darkness and prefer moonlit nights", 
+            "🦇 Many vampires can transform into bats, wolves, or mist at will",
+            "⚰️ They sleep during the day in silk-lined coffins for ultimate comfort"
+        ],
+        shadowCompanion: {
+            name: "Phantom Bat",
+            icon: "🦇",
+            description: "Your shadow companion is the mysterious phantom bat, representing stealth, night vision, and ancient wisdom. Like you, bats navigate darkness with precision and possess supernatural senses."
+        }
     },
-    dragon: {
-        title: "🔥 Majestic Dragon 🔥",
-        emoji: "🐉",
-        description: "You are a powerful and magnificent dragon! You're confident, brave, and not afraid to stand up for what you believe in. Your fierce loyalty and protective nature make you an incredible friend. You have natural leadership qualities and the courage to face any challenge. While you may seem intimidating at first, those who know you understand your warm heart and generous spirit. You're destined for greatness! 👑💪",
+    werewolf: {
+        title: "� Fierce Werewolf �",
+        emoji: "�",
+        description: "You are a powerful and primal werewolf! You're passionate, protective, and deeply connected to your instincts. Your fierce loyalty to your pack and family makes you a formidable ally. You have natural leadership qualities and the strength to face any challenge head-on. While you can be wild and untamed, those who earn your trust know your heart is pure. You embody both human intelligence and wolf cunning! 🌕💪",
         zodiacSigns: ["♈ Aries", "♌ Leo", "♐ Sagittarius"],
         compatibility: {
-            best: ["dragon", "unicorn"],
-            good: ["mermaid"],
-            challenging: ["fairy"]
+            best: ["werewolf", "ghost"],
+            good: ["witch"],
+            challenging: ["vampire"]
         },
         creativity: [
             { icon: "🏛️", title: "Architecture", desc: "Designing grand, impressive structures" },
@@ -257,15 +262,15 @@ const personalities = {
             "👑 Ancient dragons are repositories of forgotten wisdom and history"
         ]
     },
-    unicorn: {
-        title: "🦄 Pure Unicorn 🦄",
-        emoji: "🦄",
-        description: "You are a beautiful, pure-hearted unicorn! Your kindness and compassion touch everyone around you. You have an incredible ability to heal hearts and bring peace to troubled souls. Your optimistic outlook and belief in magic inspire others to see the good in the world. You're graceful, gentle, and possess an inner strength that shines like a beacon of hope. You truly make the world a more magical place! 🌈💕",
-        zodiacSigns: ["♉ Taurus", "♍ Virgo", "♓ Pisces"],
+    witch: {
+        title: "�‍♀️ Mystical Witch �‍♀️",
+        emoji: "�‍♀️",
+        description: "You are a wise and powerful witch! Your deep knowledge of ancient mysteries and natural magic sets you apart from others. You have an innate ability to heal, protect, and transform situations with your spells and potions. Your intuition is unmatched, and you can see through deception easily. You're independent, strong-willed, and not afraid to walk your own path. Your magic comes from within, and you use it to help those who truly need it! �✨",
+        zodiacSigns: ["♍ Virgo", "♏ Scorpio", "♓ Pisces"],
         compatibility: {
-            best: ["fairy", "dragon"],
-            good: ["unicorn"],
-            challenging: ["mermaid"]
+            best: ["vampire", "ghost"],
+            good: ["witch"],
+            challenging: ["werewolf"]
         },
         creativity: [
             { icon: "🌈", title: "Rainbow Art", desc: "Creating colorful, uplifting masterpieces" },
@@ -280,15 +285,15 @@ const personalities = {
             "💫 Unicorns can see the true nature of people's hearts"
         ]
     },
-    mermaid: {
-        title: "🧜‍♀️ Mystical Mermaid 🧜‍♀️",
-        emoji: "🧜‍♀️",
-        description: "You are an enchanting mermaid with depths of wisdom and mystery! You're intuitive, emotional, and deeply connected to the world around you. Your fluid nature allows you to adapt to any situation, and your ancient wisdom helps guide others through life's currents. You're a natural storyteller and keeper of secrets, with an oceanic heart that's both calm and powerful. Your mysterious charm and deep understanding make you truly captivating! 🌊✨",
-        zodiacSigns: ["♋ Cancer", "♏ Scorpio", "♓ Pisces"],
+    ghost: {
+        title: "👻 Ethereal Ghost 👻",
+        emoji: "👻",
+        description: "You are a mysterious and ethereal ghost! You move through life with an otherworldly grace, often feeling like you're between two worlds. You're deeply empathetic and can sense the emotions and energies of others easily. Your past experiences have given you wisdom beyond your years, and you have a unique perspective on life and death. You're gentle yet haunting, with the ability to appear and disappear when needed. Your presence brings both comfort and mystery to those around you! �️✨",
+        zodiacSigns: ["♋ Cancer", "♎ Libra", "♓ Pisces"],
         compatibility: {
-            best: ["fairy", "mermaid"],
-            good: ["dragon"],
-            challenging: ["unicorn"]
+            best: ["vampire", "witch"],
+            good: ["ghost"],
+            challenging: ["werewolf"]
         },
         creativity: [
             { icon: "📖", title: "Storytelling", desc: "Weaving tales of ancient wisdom" },
@@ -326,76 +331,100 @@ const personalities = {
 };
 
 // Add powers, spirit animals, love languages, and quotes for other personalities
-personalities.fairy.powers = [
-    { icon: "✨", name: "Sparkle Magic", description: "Make anything beautiful and bright" },
-    { icon: "🌸", name: "Nature's Touch", description: "Help flowers bloom instantly" },
-    { icon: "🧚‍♀️", name: "Size Shifting", description: "Become tiny to explore hidden worlds" },
-    { icon: "💫", name: "Joy Spreading", description: "Lift spirits with pure happiness" }
+personalities.vampire.powers = [
+    { icon: "🩸", name: "Blood Drain", description: "Sustain yourself with life essence" },
+    { icon: "🦇", name: "Bat Form", description: "Transform into a bat for swift travel" },
+    { icon: "👁️", name: "Mind Control", description: "Hypnotize mortals with your gaze" },
+    { icon: "🌙", name: "Immortality", description: "Live forever in eternal darkness" }
 ];
 
-personalities.fairy.spiritAnimal = {
-    name: "Enchanted Hummingbird",
-    icon: "🐦",
-    description: "Your spirit guide is the delicate hummingbird, representing joy, resilience, and the ability to find sweetness in life. Like you, hummingbirds bring color and magic wherever they go, despite their small size."
+personalities.vampire.shadowCompanion = {
+    name: "Blood Raven",
+    icon: "🐦‍⬛",
+    description: "Your shadow companion is the blood raven, representing death, mystery, and forbidden knowledge. Like you, ravens are intelligent, elegant, and deeply connected to the realm between life and death."
 };
 
-personalities.fairy.loveLanguage = {
-    name: "Thoughtful Surprises",
-    icon: "🎁",
-    description: "Your magical love language sparkles through small, thoughtful gestures and surprise gifts. You show love by creating magical moments and leaving little tokens of affection."
+personalities.vampire.fearLanguage = {
+    name: "Seductive Terror",
+    icon: "💋",
+    description: "Your dark language of fear flows through elegant intimidation and mesmerizing presence. You inspire fear through sophisticated charm mixed with deadly beauty."
 };
 
-personalities.fairy.quote = {
-    text: "I may be small, but I carry enough magic to light up the entire world with wonder and joy.",
-    author: "The Enchanted Fairy Within"
+personalities.vampire.quote = {
+    text: "I am eternal darkness wrapped in elegant beauty, forever hunting in the shadows of immortality.",
+    author: "The Ancient Vampire Within"
 };
 
-personalities.dragon.powers = [
-    { icon: "🔥", name: "Dragon Fire", description: "Create and control magical flames" },
-    { icon: "👑", name: "Natural Leadership", description: "Inspire others to greatness" },
-    { icon: "🛡️", name: "Protective Aura", description: "Shield loved ones from harm" },
-    { icon: "💎", name: "Treasure Sense", description: "Detect true value and beauty" }
+personalities.werewolf.powers = [
+    { icon: "�", name: "Lycanthropy", description: "Transform into a powerful wolf" },
+    { icon: "�", name: "Enhanced Senses", description: "Track prey for miles" },
+    { icon: "�", name: "Pack Leadership", description: "Command respect and loyalty" },
+    { icon: "🌕", name: "Lunar Strength", description: "Gain power from the full moon" }
 ];
 
-personalities.dragon.spiritAnimal = {
-    name: "Majestic Eagle",
-    icon: "🦅",
-    description: "Your spirit guide is the powerful eagle, representing vision, courage, and leadership. Like you, eagles soar above challenges and see the bigger picture with clarity and strength."
+personalities.werewolf.shadowCompanion = {
+    name: "Alpha Wolf",
+    icon: "🐺",
+    description: "Your shadow companion is the alpha wolf, representing primal power, loyalty, and fierce protection. Like you, wolves are pack leaders who command respect through strength and unwavering loyalty."
 };
 
-personalities.dragon.loveLanguage = {
-    name: "Acts of Protection",
-    icon: "🛡️",
-    description: "Your magical love language roars through fierce loyalty and protective actions. You show love by standing up for others and being their unwavering support system."
+personalities.werewolf.fearLanguage = {
+    name: "Primal Intimidation",
+    icon: "�",
+    description: "Your dark language of fear howls through raw, primal power and territorial dominance. You inspire fear through savage strength and protective ferocity."
 };
 
-personalities.dragon.quote = {
-    text: "I am fire and strength, wisdom and power - a guardian whose flame burns bright for those I cherish.",
-    author: "The Majestic Dragon Within"
+personalities.werewolf.quote = {
+    text: "I am untamed wilderness and fierce loyalty - a beast whose howl echoes through the darkness for my pack.",
+    author: "The Wild Werewolf Within"
 };
 
-personalities.unicorn.powers = [
-    { icon: "🌈", name: "Rainbow Creation", description: "Paint the sky with hope and beauty" },
-    { icon: "💖", name: "Heart Healing", description: "Mend broken hearts and spirits" },
-    { icon: "🦄", name: "Purity Aura", description: "Purify negativity with presence" },
-    { icon: "✨", name: "Miracle Working", description: "Make the impossible possible through belief" }
+personalities.witch.powers = [
+    { icon: "🔮", name: "Dark Divination", description: "See into the future through scrying" },
+    { icon: "🪄", name: "Curse Casting", description: "Weave spells of doom and misfortune" },
+    { icon: "�‍♀️", name: "Potion Brewing", description: "Create powerful elixirs and potions" },
+    { icon: "🌙", name: "Moon Magic", description: "Draw power from lunar cycles" }
 ];
 
-personalities.unicorn.spiritAnimal = {
-    name: "Graceful Swan",
-    icon: "🦢",
-    description: "Your spirit guide is the elegant swan, representing grace, transformation, and inner beauty. Like you, swans embody purity and have the power to transform from humble beginnings into magnificent beings."
+personalities.witch.shadowCompanion = {
+    name: "Blood Raven",
+    icon: "🐦‍⬛",
+    description: "Your shadow companion is the mystical raven, representing ancient wisdom, prophecy, and dark magic. Like you, ravens are keepers of secrets and messengers between worlds."
 };
 
-personalities.unicorn.loveLanguage = {
-    name: "Gentle Affirmations",
-    icon: "💕",
-    description: "Your magical love language glows through kind words and gentle encouragement. You show love by believing in others and helping them see their own inner light and potential."
+personalities.witch.fearLanguage = {
+    name: "Mystical Dread",
+    icon: "�",
+    description: "Your dark language of fear weaves through ancient curses and supernatural omens. You inspire fear through mysterious knowledge and the threat of dark magic."
 };
 
-personalities.unicorn.quote = {
-    text: "I am pure light and endless possibility - wherever I go, I leave trails of hope and healing.",
-    author: "The Pure Unicorn Within"
+personalities.witch.quote = {
+    text: "I am ancient wisdom and dark power - wherever I walk, I leave traces of magic and mystery.",
+    author: "The Dark Witch Within"
+};
+
+personalities.ghost.powers = [
+    { icon: "👻", name: "Ethereal Form", description: "Phase through solid matter at will" },
+    { icon: "❄️", name: "Spectral Chill", description: "Freeze the air around your presence" },
+    { icon: "👁️", name: "Soul Sight", description: "See the true nature of mortals" },
+    { icon: "🌫️", name: "Manifestation", description: "Appear and disappear at will" }
+];
+
+personalities.ghost.shadowCompanion = {
+    name: "Phantom Cat",
+    icon: "🐈‍⬛",
+    description: "Your shadow companion is the ethereal phantom cat, representing mystery, independence, and otherworldly wisdom. Like you, phantom cats move between dimensions with silent grace."
+};
+
+personalities.ghost.fearLanguage = {
+    name: "Silent Terror",
+    icon: "🤫",
+    description: "Your dark language of fear whispers through haunting presence and chilling silence. You inspire fear through mysterious appearances and unexplained phenomena."
+};
+
+personalities.ghost.quote = {
+    text: "I am the whisper between worlds, forever wandering the veil between life and death.",
+    author: "The Eternal Ghost Within"
 };
 
 // DOM elements
@@ -409,8 +438,8 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 function startQuiz() {
-    // Show magical loading message
-    showMagicalMessage("🎲 Conjuring 13 magical questions just for you... ✨", 2000);
+    // Show dark loading message
+    showMagicalMessage("🎲 Summoning 13 sinister questions from the shadows... 🦇", 2000);
     
     // Generate randomized questions for this quiz session
     setTimeout(() => {
@@ -657,18 +686,18 @@ function updateMagicalPowers(result) {
 function updateSpiritAnimal(result) {
     const spiritAnimal = document.getElementById('spiritAnimal');
     spiritAnimal.innerHTML = `
-        <span class="spirit-animal-icon">${result.spiritAnimal.icon}</span>
-        <div class="spirit-animal-name">${result.spiritAnimal.name}</div>
-        <div class="spirit-animal-desc">${result.spiritAnimal.description}</div>
+        <span class="spirit-animal-icon">${result.shadowCompanion.icon}</span>
+        <div class="spirit-animal-name">${result.shadowCompanion.name}</div>
+        <div class="spirit-animal-desc">${result.shadowCompanion.description}</div>
     `;
 }
 
 function updateLoveLanguage(result) {
     const loveLanguage = document.getElementById('loveLanguage');
     loveLanguage.innerHTML = `
-        <span class="love-language-icon">${result.loveLanguage.icon}</span>
-        <div class="love-language-name">${result.loveLanguage.name}</div>
-        <div class="love-language-desc">${result.loveLanguage.description}</div>
+        <span class="love-language-icon">${result.fearLanguage.icon}</span>
+        <div class="love-language-name">${result.fearLanguage.name}</div>
+        <div class="love-language-desc">${result.fearLanguage.description}</div>
     `;
 }
 
@@ -730,7 +759,7 @@ function generateCertificate() {
             </h1>
             <p style="color: #666; font-size: 1.1rem; margin: 20px 0; line-height: 1.6;">
                 Possessing the magical powers of ${result.powers[0].name}, ${result.powers[1].name}, 
-                and ${result.powers[2].name}, with ${result.spiritAnimal.name} as their eternal guide.
+                and ${result.powers[2].name}, with ${result.shadowCompanion.name} as their eternal guide.
             </p>
             <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: center;">
                 <div style="text-align: center;">
