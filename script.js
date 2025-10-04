@@ -66,17 +66,17 @@ const questionPool = [
     {
         question: "Which element feels most like home to you? 🌍",
         answers: [
-            { text: "Air - light, free, and full of possibilities 🍃", personality: "fairy" },
-            { text: "Fire - passionate, powerful, and transformative 🔥", personality: "dragon" },
-            { text: "Earth - grounding, nurturing, and stable 🌱", personality: "unicorn" },
+            { text: "Darkness - mysterious, powerful, and full of secrets �️", personality: "witch" },
+            { text: "Fire - passionate, powerful, and transformative 🔥", personality: "werewolf" },
+            { text: "Earth - grounding, ancient, and powerful 🌱", personality: "vampire" },
             { text: "Water - flowing, emotional, and mysterious 💧", personality: "mermaid" }
         ]
     },
     {
         question: "What's your ideal social gathering? 🎉",
         answers: [
-            { text: "An intimate garden party with close friends 🌷", personality: "fairy" },
-            { text: "A grand celebration where you're the center of attention ✨", personality: "dragon" },
+            { text: "A séance with trusted coven members 🕯️", personality: "witch" },
+            { text: "A blood moon ritual where you command the pack 🌕", personality: "werewolf" },
             { text: "A peaceful gathering focused on meaningful connections 💕", personality: "unicorn" },
             { text: "A mystical moonlight ceremony by the water 🌙", personality: "mermaid" }
         ]
@@ -138,8 +138,8 @@ const questionPool = [
     {
         question: "How do you like to celebrate achievements? 🎉",
         answers: [
-            { text: "A quiet celebration with sparklers and fairy cakes 🧚‍♀️", personality: "fairy" },
-            { text: "A grand party with fireworks and fanfare 🎆", personality: "dragon" },
+            { text: "A haunting celebration in an old cemetery ⚰️", personality: "ghost" },
+            { text: "A wild hunt through the dark forest �", personality: "werewolf" },
             { text: "Sharing the joy with those who helped you succeed 🤝", personality: "unicorn" },
             { text: "A peaceful reflection under the moonlight 🌙", personality: "mermaid" }
         ]
@@ -147,8 +147,8 @@ const questionPool = [
     {
         question: "What's your magical morning routine? ☀️",
         answers: [
-            { text: "Greet the sunrise with a twirl and flower crown 🌅", personality: "fairy" },
-            { text: "Rise boldly and roar with confidence 💪", personality: "dragon" },
+            { text: "Begin the night with dark rituals and incantations �", personality: "witch" },
+            { text: "Howl at the moon and embrace your wild nature 🌙", personality: "werewolf" },
             { text: "Start with gentle stretches and gratitude 🧘‍♀️", personality: "unicorn" },
             { text: "Wade into cool water and meditate 🌊", personality: "mermaid" }
         ]
@@ -156,8 +156,8 @@ const questionPool = [
     {
         question: "Which magical profession calls to you? 🔮",
         answers: [
-            { text: "Enchanted florist creating living bouquets 🌻", personality: "fairy" },
-            { text: "Royal advisor to magical kingdoms 👑", personality: "dragon" },
+            { text: "Necromancer communing with the dead 💀", personality: "ghost" },
+            { text: "Pack leader protecting the wilderness �", personality: "werewolf" },
             { text: "Healer in a crystal sanctuary 💎", personality: "unicorn" },
             { text: "Keeper of ancient oceanic libraries 📚", personality: "mermaid" }
         ]
@@ -165,8 +165,8 @@ const questionPool = [
     {
         question: "How do you handle magical secrets? 🤫",
         answers: [
-            { text: "Keep them safe in a tiny locked diary ✨", personality: "fairy" },
-            { text: "Guard them fiercely like precious treasure 🛡️", personality: "dragon" },
+            { text: "Lock them away in an ancient grimoire 📖", personality: "witch" },
+            { text: "Protect them with fierce pack loyalty 🛡️", personality: "werewolf" },
             { text: "Hold them gently in your heart with love 💝", personality: "unicorn" },
             { text: "Let them flow like messages in bottles 🍼", personality: "mermaid" }
         ]
@@ -174,8 +174,8 @@ const questionPool = [
     {
         question: "What's your magical study preference? 📖",
         answers: [
-            { text: "Small groups with lots of giggles and snacks 🍯", personality: "fairy" },
-            { text: "Leading discussions with passion and energy ⚡", personality: "dragon" },
+            { text: "Small covens with dark rituals and potions �", personality: "witch" },
+            { text: "Leading the pack with primal wisdom ⚡", personality: "werewolf" },
             { text: "One-on-one tutoring with patient guidance 🤲", personality: "unicorn" },
             { text: "Solo study in quiet, contemplative spaces 🧘", personality: "mermaid" }
         ]
@@ -187,10 +187,10 @@ let questions = []; // This will hold the randomized questions for current sessi
 let currentQuestion = 0;
 let answers = [];
 let personalityScores = {
-    fairy: 0,
-    dragon: 0,
-    unicorn: 0,
-    mermaid: 0
+    vampire: 0,
+    werewolf: 0,
+    witch: 0,
+    ghost: 0
 };
 
 // Function to randomize and select questions for this quiz session
@@ -296,41 +296,20 @@ const personalities = {
             challenging: ["werewolf"]
         },
         creativity: [
-            { icon: "📖", title: "Storytelling", desc: "Weaving tales of ancient wisdom" },
-            { icon: "🐚", title: "Shell Crafting", desc: "Creating art from ocean treasures" },
-            { icon: "🎶", title: "Siren Songs", desc: "Enchanting melodies from the deep" },
-            { icon: "🔮", title: "Divination", desc: "Reading the tides of fate and future" }
+            { icon: "�", title: "Haunting Poetry", desc: "Writing verses from beyond the veil" },
+            { icon: "�️", title: "Ethereal Art", desc: "Creating mysterious, otherworldly pieces" },
+            { icon: "�", title: "Spirit Theater", desc: "Performing haunting dramatic pieces" },
+            { icon: "🔮", title: "Séance Leading", desc: "Communicating between worlds" }
         ],
         funFacts: [
-            "🌊 Mermaids can communicate with all sea creatures",
-            "🌙 Their powers are strongest during full moons and high tides",
-            "💎 They guard ancient treasures and lost civilizations",
-            "🎭 Each mermaid's song is unique, like a magical fingerprint"
-        ],
-        powers: [
-            { icon: "🌊", name: "Tidal Control", description: "Command the ocean's movements" },
-            { icon: "🐟", name: "Sea Speak", description: "Communicate with marine life" },
-            { icon: "🔮", name: "Future Sight", description: "See visions in water's reflection" },
-            { icon: "💧", name: "Healing Waters", description: "Purify and heal with touch" }
-        ],
-        spiritAnimal: {
-            name: "Mystical Dolphin",
-            icon: "🐬",
-            description: "Your spirit guide is the wise dolphin, representing intelligence, playfulness, and deep emotional connection. Like you, dolphins are social creatures who value harmony and possess ancient wisdom about navigating life's depths."
-        },
-        loveLanguage: {
-            name: "Deep Conversations",
-            icon: "🌊",
-            description: "Your magical love language flows through meaningful conversations and emotional intimacy. You connect through sharing secrets, dreams, and exploring the mysteries of the heart together."
-        },
-        quote: {
-            text: "Like the ocean, I am deep, mysterious, and full of hidden treasures waiting to be discovered.",
-            author: "The Mystical Mermaid Within"
-        }
+            "👻 Ghosts can phase through solid matter at will",
+            "� They're most active during the witching hours between midnight and 3 AM",
+            "❄️ Their presence often drops the temperature in a room",
+            "📱 They can interfere with electronic devices and cause mysterious glitches"
+        ]
     }
 };
 
-// Add powers, spirit animals, love languages, and quotes for other personalities
 personalities.vampire.powers = [
     { icon: "🩸", name: "Blood Drain", description: "Sustain yourself with life essence" },
     { icon: "🦇", name: "Bat Form", description: "Transform into a bat for swift travel" },
@@ -449,10 +428,10 @@ function startQuiz() {
         currentQuestion = 0;
         answers = [];
         personalityScores = {
-            fairy: 0,
-            dragon: 0,
-            unicorn: 0,
-            mermaid: 0
+            vampire: 0,
+            werewolf: 0,
+            witch: 0,
+            ghost: 0
         };
         
         startScreen.style.display = 'none';
@@ -509,10 +488,10 @@ function prevQuestion() {
 function calculatePersonality() {
     // Reset scores
     personalityScores = {
-        fairy: 0,
-        dragon: 0,
-        unicorn: 0,
-        mermaid: 0
+        vampire: 0,
+        werewolf: 0,
+        witch: 0,
+        ghost: 0
     };
     
     // Calculate scores based on answers
@@ -525,7 +504,7 @@ function calculatePersonality() {
     
     // Find the personality with the highest score
     let maxScore = 0;
-    let resultPersonality = 'fairy';
+    let resultPersonality = 'vampire';
     
     for (const [personality, score] of Object.entries(personalityScores)) {
         if (score > maxScore) {
@@ -633,10 +612,10 @@ function updateFunFacts(result) {
 
 function getCreatureName(type) {
     const names = {
-        fairy: 'Fairy',
-        dragon: 'Dragon', 
-        unicorn: 'Unicorn',
-        mermaid: 'Mermaid'
+        vampire: 'Vampire',
+        werewolf: 'Werewolf', 
+        witch: 'Witch',
+        ghost: 'Ghost'
     };
     return names[type];
 }
@@ -647,17 +626,17 @@ function shareResult() {
     
     if (navigator.share) {
         navigator.share({
-            title: 'My Magical Creature Result!',
-            text: `I just discovered I'm a ${result.title}! ✨ Take the randomized quiz to find your magical creature!`,
+            title: 'My Horror Character Result!',
+            text: `I just discovered I'm a ${result.title}! 🎃 Take the randomized quiz to find your horror character!`,
             url: window.location.href
         });
     } else {
         // Fallback for browsers that don't support native sharing
-        const shareText = `I just discovered I'm a ${result.title}! ✨ Take the magical randomized quiz to find your creature: ${window.location.href}`;
+        const shareText = `I just discovered I'm a ${result.title}! 🎃 Take the horror randomized quiz to find your character: ${window.location.href}`;
         
         if (navigator.clipboard) {
             navigator.clipboard.writeText(shareText).then(() => {
-                showShareMessage('Result copied to clipboard! Share it with your friends! 💖');
+                showShareMessage('Result copied to clipboard! Share your darkness! 🦇');
             });
         } else {
             // Final fallback
@@ -667,7 +646,7 @@ function shareResult() {
             textArea.select();
             document.execCommand('copy');
             document.body.removeChild(textArea);
-            showShareMessage('Result copied to clipboard! Share it with your friends! 💖');
+            showShareMessage('Result copied to clipboard! Share your darkness! 🦇');
         }
     }
 }
@@ -739,36 +718,36 @@ function generateCertificate() {
     const certificateModal = document.getElementById('certificateModal');
     const certificate = document.getElementById('certificate');
     
-    const userName = prompt("Enter your magical name for the certificate:") || "Magical Being";
+    const userName = prompt("Enter your dark name for the certificate:") || "Dark Being";
     
     certificate.innerHTML = `
         <div style="text-align: center;">
-            <h1 style="color: #ff6b9d; font-size: 2.5rem; margin-bottom: 20px;">
-                🏆 Certificate of Magical Identity 🏆
+            <h1 style="color: #DC143C; font-size: 2.5rem; margin-bottom: 20px;">
+                � Certificate of Dark Identity �
             </h1>
             <div style="font-size: 4rem; margin: 20px 0;">${result.emoji}</div>
             <h2 style="color: #4a5568; margin-bottom: 10px;">This certifies that</h2>
-            <h1 style="color: #ff6b9d; font-size: 2rem; margin: 20px 0; font-weight: bold;">
+            <h1 style="color: #DC143C; font-size: 2rem; margin: 20px 0; font-weight: bold;">
                 ${userName}
             </h1>
             <h2 style="color: #4a5568; margin-bottom: 20px;">is officially recognized as</h2>
-            <h1 style="background: linear-gradient(45deg, #ff6b9d, #ffd93d, #6bcf7f); 
+            <h1 style="background: linear-gradient(45deg, #8B0000, #DC143C, #B22222); 
                        -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
                        font-size: 2.2rem; margin: 20px 0; font-weight: bold;">
                 ${result.title}
             </h1>
             <p style="color: #666; font-size: 1.1rem; margin: 20px 0; line-height: 1.6;">
-                Possessing the magical powers of ${result.powers[0].name}, ${result.powers[1].name}, 
+                Possessing the dark powers of ${result.powers[0].name}, ${result.powers[1].name}, 
                 and ${result.powers[2].name}, with ${result.shadowCompanion.name} as their eternal guide.
             </p>
             <div style="margin-top: 30px; display: flex; justify-content: space-between; align-items: center;">
                 <div style="text-align: center;">
-                    <div style="border-top: 2px solid #ff6b9d; width: 200px; margin-bottom: 5px;"></div>
-                    <small style="color: #888;">Magical Council Seal</small>
+                    <div style="border-top: 2px solid #DC143C; width: 200px; margin-bottom: 5px;"></div>
+                    <small style="color: #888;">Dark Council Seal</small>
                 </div>
-                <div style="font-size: 2rem;">🌟✨🦄✨🌟</div>
+                <div style="font-size: 2rem;">🦇💀�💀�</div>
                 <div style="text-align: center;">
-                    <div style="border-top: 2px solid #ff6b9d; width: 200px; margin-bottom: 5px;"></div>
+                    <div style="border-top: 2px solid #DC143C; width: 200px; margin-bottom: 5px;"></div>
                     <small style="color: #888;">Date: ${new Date().toLocaleDateString()}</small>
                 </div>
             </div>
@@ -847,15 +826,14 @@ function showShareMessage(message) {
 }
 
 function restartQuiz() {
-    // Reset all quiz state - new questions will be generated on next start
     currentQuestion = 0;
     answers = [];
     questions = [];
     personalityScores = {
-        fairy: 0,
-        dragon: 0,
-        unicorn: 0,
-        mermaid: 0
+        vampire: 0,
+        werewolf: 0,
+        witch: 0,
+        ghost: 0
     };
     
     resultContainer.style.display = 'none';
@@ -987,7 +965,6 @@ function createClickEffect(e) {
     setTimeout(() => effect.remove(), 600);
 }
 
-// Enhanced show question with magical effects
 function showQuestion() {
     const question = questions[currentQuestion];
     questionElement.textContent = question.question;
@@ -1026,15 +1003,11 @@ function showQuestion() {
         answersElement.appendChild(answerDiv);
     });
     
-    // Update navigation buttons
     prevBtn.style.display = currentQuestion > 0 ? 'block' : 'none';
     nextBtn.style.display = answers[currentQuestion] !== undefined ? 'block' : 'none';
-    
-    // Add magical entrance animations
     questionElement.style.animation = 'fadeInDown 0.6s ease-out';
     answersElement.style.animation = 'fadeInUp 0.6s ease-out';
     
-    // Update hint message
     const hints = [
         "✨ Trust your heart and choose what feels most magical to you! ✨",
         "🌟 There are no wrong answers, only magical discoveries! 🌟",
