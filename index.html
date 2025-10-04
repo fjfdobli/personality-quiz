@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Which Magical Creature Are You? ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-trail" id="cursorTrail"></div>
+    <div class="floating-elements">
+        <div class="floating-heart">💖</div>
+        <div class="floating-star">⭐</div>
+        <div class="floating-sparkle">✨</div>
+        <div class="floating-moon">🌙</div>
+        <div class="floating-butterfly">🦋</div>
+    </div>
+
+    <div class="container">
+        <div class="stars"></div>
+        
+        <!-- Magic Particles -->
+        <div class="magic-particles" id="magicParticles"></div>
+        
+        <header class="header">
+            <h1 class="title magical-text" data-text="✨ Which Magical Creature Are You? ✨">✨ Which Magical Creature Are You? ✨</h1>
+            <p class="subtitle">Discover your inner magical spirit! 🦄💖</p>
+            <div class="magic-orb"></div>
+        </header>
+
+        <div class="quiz-container" id="quiz">
+            <div class="progress-bar">
+                <div class="progress" id="progress">
+                    <div class="progress-sparkles"></div>
+                </div>
+                <div class="progress-text" id="progressText">Question 1 of 11</div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number" id="questionNumber">Question 1</div>
+                <h2 class="question" id="question"></h2>
+                <div class="answers" id="answers"></div>
+                <div class="question-hint" id="questionHint">✨ Trust your heart and choose what feels most magical to you! ✨</div>
+            </div>
+            
+            <div class="navigation">
+                <button class="btn btn-prev" id="prevBtn" onclick="prevQuestion()" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="btn btn-next" id="nextBtn" onclick="nextQuestion()" style="display: none;">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="result-container" id="result" style="display: none;">
+            <div class="result-card">
+                <div class="result-image" id="resultImage"></div>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <p class="result-description" id="resultDescription"></p>
+                
+                <!-- Zodiac Connection -->
+                <div class="zodiac-section">
+                    <h3 class="section-title">🌙 Zodiac Connection 🌙</h3>
+                    <div class="zodiac-info" id="zodiacInfo"></div>
+                </div>
+
+                <!-- Compatibility Section -->
+                <div class="compatibility-section">
+                    <h3 class="section-title">💕 Magical Friendships 💕</h3>
+                    <div class="compatibility-grid">
+                        <div class="compatibility-item best">
+                            <span class="compatibility-label">Best Friends</span>
+                            <div class="compatibility-creatures" id="bestFriends"></div>
+                        </div>
+                        <div class="compatibility-item good">
+                            <span class="compatibility-label">Great Connections</span>
+                            <div class="compatibility-creatures" id="goodConnections"></div>
+                        </div>
+                        <div class="compatibility-item challenging">
+                            <span class="compatibility-label">Growth Opportunities</span>
+                            <div class="compatibility-creatures" id="challengingConnections"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Expression -->
+                <div class="creativity-section">
+                    <h3 class="section-title">🎨 Your Creative Magic 🎨</h3>
+                    <div class="creativity-grid" id="creativityGrid"></div>
+                </div>
+
+                <!-- Magical Powers -->
+                <div class="powers-section">
+                    <h3 class="section-title">🔮 Your Magical Powers 🔮</h3>
+                    <div class="powers-grid" id="powersGrid"></div>
+                </div>
+
+                <!-- Spirit Animal -->
+                <div class="spirit-animal-section">
+                    <h3 class="section-title">🐾 Your Spirit Animal Guide 🐾</h3>
+                    <div class="spirit-animal-card" id="spiritAnimal"></div>
+                </div>
+
+                <!-- Love Language -->
+                <div class="love-language-section">
+                    <h3 class="section-title">💕 Your Magical Love Language 💕</h3>
+                    <div class="love-language-card" id="loveLanguage"></div>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="fun-facts-section">
+                    <h3 class="section-title">✨ Magical Fun Facts ✨</h3>
+                    <div class="fun-facts" id="funFacts"></div>
+                </div>
+
+                <!-- Magical Quote -->
+                <div class="quote-section">
+                    <h3 class="section-title">🌟 Your Magical Mantra 🌟</h3>
+                    <div class="magical-quote" id="magicalQuote"></div>
+                </div>
+
+                <!-- Share & Restart Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-share" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share Your Magic ✨
+                    </button>
+                    <button class="btn btn-restart" onclick="restartQuiz()">
+                        <i class="fas fa-redo"></i> Take Quiz Again 🪄
+                    </button>
+                    <button class="btn btn-certificate" onclick="generateCertificate()">
+                        <i class="fas fa-certificate"></i> Get Your Certificate 🏆
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-container" id="startScreen">
+            <div class="start-card">
+                <div class="magical-icon animated-icon">🌙✨🦄✨🌙</div>
+                <h2>Ready to discover your magical side?</h2>
+                <p>Answer 13 magical questions randomly selected just for you to reveal which creature matches your soul!</p>
+                <div class="features-preview">
+                    <div class="feature-item">🎲 Questions randomized each time!</div>
+                    <div class="feature-item">🔮 Discover your magical powers</div>
+                    <div class="feature-item">🐾 Meet your spirit animal</div>
+                    <div class="feature-item">💕 Find your love language</div>
+                    <div class="feature-item">🌟 Get your personal mantra</div>
+                </div>
+                <button class="btn btn-start magical-button" onclick="startQuiz()">
+                    <span>Start the Magic!</span> 
+                    <div class="button-sparkles"></div>
+                    🪄
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificate Modal -->
+        <div class="certificate-modal" id="certificateModal" style="display: none;">
+            <div class="certificate-content">
+                <button class="close-btn" onclick="closeCertificate()">&times;</button>
+                <div class="certificate" id="certificate"></div>
+                <button class="btn btn-download" onclick="downloadCertificate()">
+                    <i class="fas fa-download"></i> Download Certificate
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
